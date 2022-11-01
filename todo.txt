@@ -1,0 +1,9 @@
+TODO:
+
+Limitar caracteres no INPUT NUMBAR TELEFONE;
+BACKGROUNDS das SECTIONS;
+API GITHUD na section PROJECTS;
+Criar Seção AJUDA
+
+VERSÃO MOBILE
+

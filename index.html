@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header>
+    <div id="navbar">
+      <img src="./assets/favico-logo.png" alt="Logo" id="logo">
+      <nav id="nav">
+        <button id="btnMenu">Menu</button>
+        <ul id="menu">
+          <li><a href="#intro" class="active" id="link-intro">Início</a></li>
+          <li><a href="#about" id="link-about">Sobre mim</a></li>
+          <li><a href="#projects" id="link-projects">Projetos</a></li>
+          <li><a href="#contact" id="link-contact">Contato</a></li>
+        </ul>
+      </nav>
+
+
+      <div class="social">
+        <span class="iconify" data-icon="logos:linkedin-icon"></span>
+        <span class="iconify" data-icon="logos:github-icon"></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="wrapper">
+      <section id="intro">
+        <div>
+          <h1>Pedro Henrique Salazar</h1>
+          <p>Developer Front-End.</p>
+          <a href="#about" id="SaberMais">Me Conheça →</a>
+        </div>
+      </section>
+
+      <section id="about">
+        <div>
+          <h1>Pedro Henrique Salazar</h1>
+          <p class="about-address">29 anos</p>
+          <p class="about-address">Cursando <b>Ciência da Computação</b></p>
+          <p class="about-address">Rio de Janeiro ─ Brasil</p>
+        </div>
+        <div>
+          <h2>Algumas Informações</h2>
+          <p>Há muito tempo venho estudando o mundo da Web (autoditada), mas há um tempo decidi, de fato, iniciar em uma faculdade para aprofundar conhecimentos.</p>
+          <p>Ainda procuro por uma experiência profissional mas já criei uns projetos.</p>
+          <p>Me dê uma chance! Conheça alguns dos projetos que eu criei.</p>
+          <h2 class="center">Skills</h2>
+          <p class="center">
+            <span class="iconify" data-icon="logos:html-5" data-width="32"></span>
+            <span class="iconify" data-icon="logos:css-3" data-width="32"></span>
+            <span class="iconify" data-icon="vscode-icons:file-type-js-official" data-width="32"></span>
+            <span class="iconify" data-icon="vscode-icons:file-type-reactjs" data-width="32"></span>
+          </p>
+
+          <p class="center">
+            <button title="Baixar Currículo em PDF">Baixar Currículo Completo</button>
+          </p>
+
+          <a href="#projects">Ver Projetos →</a>
+        </div>
+
+      </section>
+
+      <section id="projects">
+        <div>
+          <h2>Meus Projetos</h2>
+          <p>Developer Front-End.</p>
+
+          <div id="api-projects" class="loading">
+            <div class="loader"></div>
+            <p>Em Breve: API que carregará projetos direto do GITHUB aqui.</p>
+          </div>
+
+          <div class="controls">
+            <a href="#about" class="link-toLeft">← Saber sobre mim</a>
+            <a href="#contact">Entrar em contato AGORA →</a>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="contact">
+        <div>
+          <h2>Contato</h2>
+          <p>Gostou do que viu?<br> Entre em contato comigo.</p>
+
+          <form action="/" id="form-contact">
+            <input type="text" id="nome" autocomplete="off">
+            <input type="text" id="email" autocomplete="off">
+            <input type="number" id="tel" maxlength="11" autocomplete="off">
+            <textarea style="resize: none;" name="" id="" cols="30" rows="10"></textarea>
+            <a href="#">Enviar mensagem <span class="iconify" data-icon="bx:mail-send" style="color: #212121;" data-width="32" data-height="32"></span></a>
+          </form>
+        </div>
+        <div>
+          <h2>Algumas Redes Sociais</h2>
+          <p>Me acompanhe em algumas Redes Sociais.</p>
+          <p>
+            <span class="iconify" data-icon="clarity:email-solid" style="color: #212121;" data-width="32" data-height="32"></span>
+
+            <span class="iconify" data-icon="akar-icons:linkedin-box-fill" style="color: #212121;" data-width="32" data-height="32"></span>
+            <span class="iconify" data-icon="logos:github-icon" data-width="32" data-height="32"></span>
+            <span class="iconify" data-icon=""></span>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    </div>
+  </main>
+
+  <script src="./assets/main.js"></script>
+</body>
+
+</html>
