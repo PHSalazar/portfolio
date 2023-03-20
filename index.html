@@ -1,126 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/main.css">
-  <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
-  <title>Document</title>
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Portfolio - Pedro Henrique Salazar</title>
 </head>
 
 <body>
 
-  <header>
-    <div id="navbar">
-      <img src="./assets/favico-logo.png" alt="Logo" id="logo">
-      <nav id="nav">
-        <button id="btnMenu">Menu</button>
-        <ul id="menu">
-          <li><a href="#intro" class="active" id="link-intro">Início</a></li>
-          <li><a href="#about" id="link-about">Sobre mim</a></li>
-          <li><a href="#projects" id="link-projects">Projetos</a></li>
-          <li><a href="#contact" id="link-contact">Contato</a></li>
-        </ul>
-      </nav>
+  <main>
+    <div id="aside-left">
+      <div id="dv_profile">
+        <img src="./assets/profile.png" alt="" id="img-profile">
+        <div class="title-name">
+          <span>Pedro</span>
+          <h2>Salazar</h2>
+        </div>
+      </div>
+      <div id="menu-container">
+        <a href="#" class="active" data-link="dv_home">
+          <svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M280.37 148.26 96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47 488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z" fill=currentColor class="fill-000000"></path>
+          </svg>
+          Início</a>
+        <a href="#" data-link="dv_about">
+          <svg height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+            <title />
+            <path d="M332.64,64.58C313.18,43.57,286,32,256,32c-30.16,0-57.43,11.5-76.8,32.38-19.58,21.11-29.12,49.8-26.88,80.78C156.76,206.28,203.27,256,256,256s99.16-49.71,103.67-110.82C361.94,114.48,352.34,85.85,332.64,64.58Z" fill=currentColor class="fill-000000" />
+            <path d="M432,480H80A31,31,0,0,1,55.8,468.87c-6.5-7.77-9.12-18.38-7.18-29.11C57.06,392.94,83.4,353.61,124.8,326c36.78-24.51,83.37-38,131.2-38s94.42,13.5,131.2,38c41.4,27.6,67.74,66.93,76.18,113.75,1.94,10.73-.68,21.34-7.18,29.11A31,31,0,0,1,432,480Z" fill=currentColor class="fill-000000" />
+          </svg>
+          Sobre mim
+        </a>
+        <a href="#" data-link="dv_port">
+          <?xml version="1.0" ?>
+          <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 64 64" height="64px" id="Layer_1" version="1.1" viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g>
+              <path d="M34.464,36.664v-1.116c0-1.361-1.103-2.464-2.463-2.464c-1.361,0-2.464,1.103-2.464,2.464v1.116   c0,1.361,1.103,2.464,2.464,2.464C33.36,39.128,34.464,38.025,34.464,36.664z" />
+              <path d="M36.154,38.027c-0.546,1.787-2.191,3.099-4.153,3.099c-1.963,0-3.608-1.312-4.154-3.099H10.878   c-1.071,0-2.083-0.249-2.991-0.681v11.267c0,2.2,1.8,4,4,4h40.226c2.2,0,4-1.8,4-4V37.347c-0.909,0.432-1.92,0.681-2.991,0.681   H36.154z" fill=currentColor />
+              <path d="M52.955,17.795h-9.601c-0.58-3.626-3.721-6.408-7.508-6.408h-7.693c-3.787,0-6.927,2.782-7.508,6.408h-9.6   c-2.292,0-4.167,1.8-4.167,4v9.233c0,2.209,1.791,4,4,4h16.78c0.057-1.151,0.551-2.185,1.332-2.933   c0.024-0.023,0.052-0.041,0.077-0.063c0.173-0.159,0.353-0.309,0.55-0.439c0.07-0.047,0.15-0.079,0.223-0.121   c0.162-0.093,0.322-0.19,0.497-0.262c0.137-0.057,0.285-0.09,0.429-0.133c0.124-0.037,0.242-0.086,0.371-0.112   c0.279-0.057,0.568-0.087,0.863-0.087c0.296,0,0.584,0.031,0.863,0.087c0.128,0.026,0.246,0.075,0.37,0.112   c0.144,0.043,0.292,0.076,0.429,0.134c0.174,0.072,0.333,0.168,0.495,0.261c0.074,0.043,0.154,0.075,0.225,0.122   c0.197,0.129,0.376,0.279,0.549,0.438c0.025,0.023,0.054,0.041,0.078,0.065c0.782,0.748,1.275,1.782,1.332,2.933h16.78   c2.209,0,4-1.791,4-4v-9.233C57.122,19.595,55.247,17.795,52.955,17.795z M24.496,17.795c0.51-1.541,1.947-2.664,3.657-2.664h7.693   c1.71,0,3.147,1.123,3.657,2.664H24.496z" fill=currentColor />
+            </g>
+          </svg>
 
-
-      <div class="social">
-        <span class="iconify" data-icon="logos:linkedin-icon"></span>
-        <span class="iconify" data-icon="logos:github-icon"></span>
+          Portfolio
+        </a>
+        <a href="#" data-link="dv_contact">
+          <svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z" fill=currentColor class="fill-000000" />
+          </svg>
+          Contato</a>
       </div>
     </div>
-  </header>
+    <div id="aside-right">
 
-  <main>
-    <div id="wrapper">
-      <section id="intro">
-        <div>
-          <h1>Pedro Henrique Salazar</h1>
-          <p>Developer Front-End.</p>
-          <a href="#about" id="SaberMais">Me Conheça →</a>
-        </div>
-      </section>
 
-      <section id="about">
+      <div id="dv_home" class="aside_right-frame show">
         <div>
-          <h1>Pedro Henrique Salazar</h1>
-          <p class="about-address">29 anos</p>
-          <p class="about-address">Cursando <b>Ciência da Computação</b></p>
-          <p class="about-address">Rio de Janeiro ─ Brasil</p>
+          <h2>Olá, meu nome é <span style="color: var(--col3);">Pedro Salazar</span>.</h2>
+          <p>Estou cursando Ciência da Computação, em busca do primeiro estágio e criei esse espaço para apresentar alguns projetos criados por mim.</p>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rerum mollitia corrupti blanditiis dignissimos magni asperiores ipsum perferendis.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, expedita provident.</p> -->
+          <button onclick="document.querySelector('#menu-container > a:nth-child(2)').click()">Saber mais sobre Mim</button>
         </div>
         <div>
-          <h2>Algumas Informações</h2>
-          <p>Há muito tempo venho estudando o mundo da Web (autoditada), mas há um tempo decidi, de fato, iniciar em uma faculdade para aprofundar conhecimentos.</p>
-          <p>Ainda procuro por uma experiência profissional mas já criei uns projetos.</p>
-          <p>Me dê uma chance! Conheça alguns dos projetos que eu criei.</p>
-          <h2 class="center">Skills</h2>
-          <p class="center">
-            <span class="iconify" data-icon="logos:html-5" data-width="32"></span>
-            <span class="iconify" data-icon="logos:css-3" data-width="32"></span>
-            <span class="iconify" data-icon="vscode-icons:file-type-js-official" data-width="32"></span>
-            <span class="iconify" data-icon="vscode-icons:file-type-reactjs" data-width="32"></span>
-          </p>
-
-          <p class="center">
-            <button title="Baixar Currículo em PDF">Baixar Currículo Completo</button>
-          </p>
-
-          <a href="#projects">Ver Projetos →</a>
+          <img id="dv_home-img_profile" src="./assets/profile.png" alt="">
         </div>
+      </div>
 
-      </section>
 
-      <section id="projects">
+      <div id="dv_about" class="aside_right-frame">
         <div>
-          <h2>Meus Projetos</h2>
-          <p>Developer Front-End.</p>
+          <h2>Sobre mim</h2>
+          <p>Me chamo <span style="color: var(--col3);">Pedro Salazar</span>, tenho 29 anos e atualmente moro no RJ - Brasil. No momento, curso Ciência da Computação na Estácio e para colocar em prática meu desenvolvimento, criei esse espaço/portifólio.</p>
+          <p>Fique a vontate para <span onclick="document.querySelector('#menu-container > a:nth-child(4)').click()" style="color: var(--col3);cursor: pointer;text-decoration: underline;">me contatar</span> :)</p>
 
-          <div id="api-projects" class="loading">
-            <div class="loader"></div>
-            <p>Em Breve: API que carregará projetos direto do GITHUB aqui.</p>
+          <div style=" display: flex; justify-content: space-evenly;width: 70%; margin-left: 0;">
+            <div>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAABPRJREFUeF7tmmvIZVMYx3//cS/JNQkZcplGGXxg8MG4RzEuuYfJNVHTJHdfXZoPIpJyyW1MhhHGpUEuNZHGuCZGCCG5FGLQ4NF/WqeWbZ85+5yz39Oe9+yn3g/v2WuvtZ7fc1nPWmuLMReNuf60AFoPGHMCbQiMuQO0SbANgTYExpzAyEMgIqYABwInA2cCGwBPAo8Cz0n6a5Q2GRmAiNgzKX0OMLWLkt8AjxmGpGWjADGhACJip2TlMwAD6EgArwEPpx/83F6Rz+eD9HyBpC8mCkbtACJic+A44CzgsIJSHwGPAA9J+iRXKiJ2BE4E5gB7FxReATxoIJK+rxNGLQAiYiPgyKT0bGDDbJI/AoutQFW3TuFigGcD22V9/Q28nGAslvTbsDAGBlCSzLbKJvM78HSa6MCJLRvDME4DNsvG+Bl4atjk2TeALJnZOjt3sc7jkn4d1jqFENkYOKKLlw2cPCsBiIgdgJMAZ/B9usTnQknf9aN0RNyUwuVaSfaaShIRWwDHdskzHwKLUsh92qvDtQJIij8AzCpJZgtSUvqs1yBlz5MSPwCuC5YDx0uyJfuSiNgF8CrimmJaYaV5xXlE0lfdOu0F4FzgnsLLS4GrJb3d10xLGkfEJcCtwHrA18BsSc74fUtEeOWwRx1VePk8SfcOCmAT4HLg9AJd9+dlzNWbi5aBYUSEVw8vjV4+/wDOl2Tv6ilJaVeU/tut8IKX3IXAfEnut1Qq5QC/GRF7pYE82B6F3oaCERGe/JLUr4uk+cA1kv4pzrqH0iszo7zXk2Ahrqu0X9NmImBExJZp8oemidi75khaFRGuBS7tYum+lc4VrewB3egkGJ7cBSVt+vKMiPDG6DbgotTXm6mqvAU4pdD/XcDtkipZeugQWJt7RMTBgDOu5fpkqd37DZOImA58mzL6zcD6wN3AC8Bc4CXgutTvLEmvVnbbYXNAHwCmSIqImJHljDIYXqvt5pY8ka2UNC0ivPp4FXJ94WXOoWeP7eSFZgPIgfWAUWT7hKQTIuLOFArrPoAKMD5O3rCoE9OTFkABxprQkGQA/5GxANAjr0zOEKiatVsPmKxJcBw8YGodh5hdQsCHrJ83sRCaCbyeWdcnus/6nB9YJml1Vct32uUAgAuB54EDsn5mSnqj336L7YfeC6QKzSWr9/WnAvnZoB//AryYYPh80Pv+nlIA4PLX+wrP14es3j7PreMSpRYAmdV8sLEfcAxwNLBvyY7z3Q6MdDfg121Zt/efYXpvcUNeCUbE/qmv5ZJ8OlyL1AqgpJjZNlPMBx8+9Mjlp/RP/rtrfW+K5hVL4Vo0LnQyoQDysSLClrWlO97hzVIu7yTP8Hn/irIkuE4DKPGO7bPzu6XF3DDpAfSyZgugpBLsBW2Q5yPLAf1OrvWA1gP+fyLUrxdVad+4EEjnfpcBVwDbAKsA30bNq2OPUYTSRAAXA3eUWO99X8zWWQV6jCYC8BH44cAzwP3A1hmQ6ZJ8+1ubNBGAd3jeT1wpaX5E+GuTP5PGB0nyt0W1SRMB+PLjEOA+3/yk3aVzgGXGsDdB60IOuAq4scTEXwK7DnK2sDZ3aaIH2OV9P+hPcPxZjMUJ0Belb9Xm+6mjxgHoKJguSjcFVtf9vVEOsbEA6rZ0t/5aAKMi3dRxWg9oqmVGNa/WA0ZFuqnjtB7QVMuMal5j7wH/Ar4rJF+ypquUAAAAAElFTkSuQmCC" alt="">
+              <p>Ciência da Computação</p>
+            </div>
+
+            <div>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAlZJREFUeF7tmjuvDVEUx39/cT2T2xDc0Ito6SgU4tErbisqH0Ep8Rko+ACiUihoJBKVXiEqr0hQiOsVj7+s5FRyz9kzc+4+Zyazpplir732mv9e7zVi5I9G/v0kAKkBI0cgTWDkCpBOME0gTaCAgO0dwFEg3qXnK/BC0t8SYV/WZ5qA7ZPAfWCthcDvgBvATUlusW8ppCUAngEngJfA5wYSHgYOTehuAVf7DkIJgB/ATmCPpO8NAMD2OnAH2A3cBa5Let5k7zJoSgD8ArYDK5J+NxXQ9gXgHrC36Z4KdCH7E+CypFfT+FcBIA6zHY7zGnC2pQ/ZaiweSTq3cAC2+iva8rO9D/gI/JS0a3QATLQwwnFo+bZpzriaCbS9sRr0thOAeTUgkpoV4EDf4/lmGmT7fQAg6WBXHxCJTTB4U0NFa/O0fSQCkqS3nQCoLWAf+Gc53OQWbIcNLTOrayLm/zTfJIUPmPmUwuCxSUp7vMSop+tRg1yaVYuUAIhc+jTwqWE12CccVoH9wFNJpzo5QdtRAUYauSrpS5++riSL7ahGo0HzJ5o5mQlOac6UTKBTOVy6nUWtZyqctUAWQ1kNzlsNphPs0hRdlJcvnZNRIKNARoGMAhkFsi2ec4EcjORkKEdjORvM4Wj2BLMnuPkfa6Wm6MZkIrTWZMpSKk8XuW47ZgIf5v1D5AFwcZGCVzjroaTzXQcjMV6+DZxp+KdoBfk7s4xu1mPgiqTXnQDofPSANuZ4fECXVUXU1IAqsA6IaWrAgC6riqipAVVgHRDT1IABXVYVUf8BBRJ/UGEiB/QAAAAASUVORK5CYII=" alt="">
+              <p>100<br>projetos</p>
+            </div>
+
+            <div>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAABPRJREFUeF7tmmvIZVMYx3//cS/JNQkZcplGGXxg8MG4RzEuuYfJNVHTJHdfXZoPIpJyyW1MhhHGpUEuNZHGuCZGCCG5FGLQ4NF/WqeWbZ85+5yz39Oe9+yn3g/v2WuvtZ7fc1nPWmuLMReNuf60AFoPGHMCbQiMuQO0SbANgTYExpzAyEMgIqYABwInA2cCGwBPAo8Cz0n6a5Q2GRmAiNgzKX0OMLWLkt8AjxmGpGWjADGhACJip2TlMwAD6EgArwEPpx/83F6Rz+eD9HyBpC8mCkbtACJic+A44CzgsIJSHwGPAA9J+iRXKiJ2BE4E5gB7FxReATxoIJK+rxNGLQAiYiPgyKT0bGDDbJI/AoutQFW3TuFigGcD22V9/Q28nGAslvTbsDAGBlCSzLbKJvM78HSa6MCJLRvDME4DNsvG+Bl4atjk2TeALJnZOjt3sc7jkn4d1jqFENkYOKKLlw2cPCsBiIgdgJMAZ/B9usTnQknf9aN0RNyUwuVaSfaaShIRWwDHdskzHwKLUsh92qvDtQJIij8AzCpJZgtSUvqs1yBlz5MSPwCuC5YDx0uyJfuSiNgF8CrimmJaYaV5xXlE0lfdOu0F4FzgnsLLS4GrJb3d10xLGkfEJcCtwHrA18BsSc74fUtEeOWwRx1VePk8SfcOCmAT4HLg9AJd9+dlzNWbi5aBYUSEVw8vjV4+/wDOl2Tv6ilJaVeU/tut8IKX3IXAfEnut1Qq5QC/GRF7pYE82B6F3oaCERGe/JLUr4uk+cA1kv4pzrqH0iszo7zXk2Ahrqu0X9NmImBExJZp8oemidi75khaFRGuBS7tYum+lc4VrewB3egkGJ7cBSVt+vKMiPDG6DbgotTXm6mqvAU4pdD/XcDtkipZeugQWJt7RMTBgDOu5fpkqd37DZOImA58mzL6zcD6wN3AC8Bc4CXgutTvLEmvVnbbYXNAHwCmSIqImJHljDIYXqvt5pY8ka2UNC0ivPp4FXJ94WXOoWeP7eSFZgPIgfWAUWT7hKQTIuLOFArrPoAKMD5O3rCoE9OTFkABxprQkGQA/5GxANAjr0zOEKiatVsPmKxJcBw8YGodh5hdQsCHrJ83sRCaCbyeWdcnus/6nB9YJml1Vct32uUAgAuB54EDsn5mSnqj336L7YfeC6QKzSWr9/WnAvnZoB//AryYYPh80Pv+nlIA4PLX+wrP14es3j7PreMSpRYAmdV8sLEfcAxwNLBvyY7z3Q6MdDfg121Zt/efYXpvcUNeCUbE/qmv5ZJ8OlyL1AqgpJjZNlPMBx8+9Mjlp/RP/rtrfW+K5hVL4Vo0LnQyoQDysSLClrWlO97hzVIu7yTP8Hn/irIkuE4DKPGO7bPzu6XF3DDpAfSyZgugpBLsBW2Q5yPLAf1OrvWA1gP+fyLUrxdVad+4EEjnfpcBVwDbAKsA30bNq2OPUYTSRAAXA3eUWO99X8zWWQV6jCYC8BH44cAzwP3A1hmQ6ZJ8+1ubNBGAd3jeT1wpaX5E+GuTP5PGB0nyt0W1SRMB+PLjEOA+3/yk3aVzgGXGsDdB60IOuAq4scTEXwK7DnK2sDZ3aaIH2OV9P+hPcPxZjMUJ0Belb9Xm+6mjxgHoKJguSjcFVtf9vVEOsbEA6rZ0t/5aAKMi3dRxWg9oqmVGNa/WA0ZFuqnjtB7QVMuMal5j7wH/Ar4rJF+ypquUAAAAAElFTkSuQmCC" alt="">
+              <p>100<br>projetos</p>
+            </div>
           </div>
-
-          <div class="controls">
-            <a href="#about" class="link-toLeft">← Saber sobre mim</a>
-            <a href="#contact">Entrar em contato AGORA →</a>
-          </div>
-
         </div>
-      </section>
+      </div>
 
-      <section id="contact">
+      <div id="dv_port" class="aside_right-frame">
+        <div>
+          <h2>Portfolio</h2>
+          <p>Alguns dos meus projetos que eu fiz para aprimorar meus conhecimentos:</p>
+        </div>
+      </div>
+
+      <div id="dv_contact" class="aside_right-frame">
         <div>
           <h2>Contato</h2>
-          <p>Gostou do que viu?<br> Entre em contato comigo.</p>
+          <p>Caso precise entrar em contato comigo, existe algumas opções.</p>
 
-          <form action="/" id="form-contact">
-            <input type="text" id="nome" autocomplete="off">
-            <input type="text" id="email" autocomplete="off">
-            <input type="number" id="tel" maxlength="11" autocomplete="off">
-            <textarea style="resize: none;" name="" id="" cols="30" rows="10"></textarea>
-            <a href="#">Enviar mensagem <span class="iconify" data-icon="bx:mail-send" style="color: #212121;" data-width="32" data-height="32"></span></a>
-          </form>
+          <p id="contact-email"><span id="email-copy">ph.s.salazar@gmail.com</span> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAABFFJREFUeF7tm0uoHUUQhr9f0aAouPCtuAiIBgTBhRFXAV0IPkjEJKARF6JCFkEQE1woARdBiQtfIKgLMRE1Rg2IREHEhahxZ0CECIKIonEh+Fb0l4pzruPcPnfm3DvdnHPv9PJMT1XXX9V1uv6uESt8aIXbTysAtk8GLgXOAk7IDNh3wBFJX2fWMyd+LAC2LwZ2AjcAJ5VaEGDgY2CXpNdz600CYPtO4IkCHm+z7xXgNkm/tE1c7PN5ANi+C3hqsQIzvHcQuE7SXxlk/z8H2L4IODwFnm/aukPSwyUAeBHYnEPREmX+AFwg6cclypn3+twWqLL994mE9y1wO/C2pD/7XkBdnu01wOPAVQk9myTt61t/HYArgA8SCq6V9GbfisfJs30K8AVwemPObkn39r2OOgDrgdcSClZJ+qNvxQvJs32g+vutT9sraUvf66gDsAl4qalAUuthqe9F2X4Z2NiQu09SrLHXMQAwgtP2NEXA80Az3PdIurVX98N/54ApA+AWYE/D2C2S9q4IAMJI2/cD2yqDH5P0YN/Gh7ypzAE5DB0ncwBgGpPgEAEFERi2QKktYHs1cD1wIXBmZifH0T2KuA+BgwtVkdkjwPb5wG4gDlrFj9VAlNK7gEdSpEpWAGxfBrwBnJPZ413EvwXc2KTXsgFQeT7IzbO7rK7QnHkFVU4AppVdiiiYK/uzAFAlvM/H7PngHD/L7PETgSuBMxJ6DklaO/o9FwBxhn80ofxuSanfe8ejYpbC01c3hMe9w3mSvslWC9h+EtjaUPyJpLhhKjYqjvHThMJ1kt7LCUAwS032Zr+km4pZ/29FGRH+d0LnRklx6ZKnGixJabUBajtCvjk2SwrabQAgVxIsRmoOEdCCwCRbIBJU6ublOEmpfTRW9azmgHXAuwmr1kia6OAyqwCcC3yVOL29A6yX9FPbfhs9n0kAYvG2PwIuTxgal6bvA6Mrst+rOjtJU88yABuAV7t6GnggRVfPLABVFKT+wsZhclTSPHZn1gGIrrD9wDUdImH5AVBFwfHAPcB9wGkLALH8tkDd2KqkjEiI5olgdqLOjrE8k2CHkO80ZaZzQCcL24+fs1cL9GH4zB+E+gJh2AIFe3zanNa5GmwTNMnzIQKGCCjX5tYWmcMW6EqKtiE5yfMhB9jBE9zcAO2ApGjHLTZsrwJ+SyjcMPoaJct9ve3oB4hiqj6OAqsnYZaWipTt+Nwn+o6bY62kQ/FjLgCiz/fYxUNjBL22TVLqumqp9s69bzuKtijink50o/wcl6aSfs0JwKnAly2ldG8GTyjoBUnRiXpsZImAEGx7O/DQhIvLPT04zUskHSkBQJAq0R7ThVnKbfhI/h2SnqkryxYBVRQEvfYcUPRWOIFmeH6rpGebz7ICMFJmO9jmHRXlXkRnpTu+N4yPL3fWw75YBDTRth3dYtEnGJ/h5hzh8egAOTzK9uOUlfRGToMXLXvFA/APSC1cX5oaUuAAAAAASUVORK5CYII=" onclick="copyDivToClipboard()" style="margin-left: 10px;" width="16px" height="16px" title="Copiar email para contato"></p>
+          <p id="contact-linked"><a target="_blank" href="https://www.linkedin.com/in/pedro-henrique-salazar/">https://www.linkedin.com/in/pedro-henrique-salazar/</a></p>
         </div>
-        <div>
-          <h2>Algumas Redes Sociais</h2>
-          <p>Me acompanhe em algumas Redes Sociais.</p>
-          <p>
-            <span class="iconify" data-icon="clarity:email-solid" style="color: #212121;" data-width="32" data-height="32"></span>
-
-            <span class="iconify" data-icon="akar-icons:linkedin-box-fill" style="color: #212121;" data-width="32" data-height="32"></span>
-            <span class="iconify" data-icon="logos:github-icon" data-width="32" data-height="32"></span>
-            <span class="iconify" data-icon=""></span>
-          </p>
-        </div>
-      </section>
-    </div>
+      </div>
 
     </div>
   </main>
 
+  <!-- Script -->
   <script src="./assets/main.js"></script>
 </body>
+
+<!-- 
+  Creditos
+Foto de <a href="https://unsplash.com/@dargonesti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ludovic Migneault</a> na <a href="https://unsplash.com/pt-br/s/fotografias/man?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+ -->
 
 </html>

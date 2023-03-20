@@ -1,49 +1,47 @@
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
+const links = document.querySelectorAll('#menu-container a');
+const divs = document.querySelectorAll('.aside_right-frame');
 
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth',
-    });
-
-    const link = '#link-' + this.getAttribute('href').replace('#', '');
-
-    const linkMenu = document.querySelector(link);
-    removeLinksTag();
-
-    linkMenu.classList.add('active');
-    console.log(linkMenu);
-  });
-});
-
-// NAV LINKS
-function removeLinksTag() {
-  const links = document.querySelectorAll('#nav ul li a');
+function linkClick() {
   links.forEach((item) => {
-    item.classList.remove('active');
+    item.addEventListener('click', (event) => {
+      // Removendo classe ACTIVE dos links
+      removeClassActive();
+
+      //Removendo as divs que foram exibidas anteriormente
+      removeDiv();
+
+      //Adicionando classe ACTIVE ao item clicado
+      event.target.classList.add('active');
+
+      //Obtendo informacoes da div a ser exibida
+      let id_link = event.target.getAttribute('data-link');
+      let div = document.getElementById(id_link);
+
+      //Mostrando div escolhida
+      div.classList.add('show');
+    });
   });
 }
 
-function linkNav(event) {
-  removeLinksTag();
-  event.target.classList.add('active');
-  const menuMobile = document.getElementById('menu');
+linkClick();
 
-  if (menuMobile.classList.contains('active')) {
-    menuMobile.classList.remove('active');
-  }
+function removeClassActive() {
+  links.forEach((link) => link.classList.remove('active'));
 }
 
-const menuLinks = document.querySelectorAll('#nav li a');
-menuLinks.forEach((item) => {
-  item.addEventListener('click', linkNav);
-});
-
-// Mobile
-const btnMobileMenu = document.getElementById('btnMenu');
-
-function handleMenu() {
-  const menuMobile = document.getElementById('menu');
-  menuMobile.classList.toggle('active');
+function removeDiv() {
+  divs.forEach((element) => {
+    element.classList.remove('show');
+  });
 }
-btnMobileMenu.addEventListener('click', handleMenu);
+
+function copyDivToClipboard() {
+  var range = document.createRange();
+  range.selectNode(document.getElementById('email-copy'));
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+  document.execCommand('copy');
+  window.getSelection().removeAllRanges();
+
+  alert('E-mail de contato copiado para área de transferência');
+}

@@ -1,0 +1,198 @@
+/* Import Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Noto+Sans&family=Poppins:wght@200;300;700&display=swap');
+/* Vars */
+
+:root {
+  --col1: #363636;
+  --col2: #151515;
+  --col3: #1758c0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background: var(--col2);
+  color: #fff;
+  display: flex;
+}
+
+#aside-left {
+  min-width: 200px;
+  height: 100vh;
+  border-right: 1px solid var(--col1);
+  display: flex;
+  flex-direction: column;
+}
+
+#aside-right {
+  flex: 2;
+}
+
+#dv_profile {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Profile */
+#img-profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 3px;
+  border: 2px solid #fff;
+  margin-top: 20px;
+}
+
+/* Title Username */
+.title-name h2::first-letter {
+  font-family: 'Great Vibes', cursives;
+  font-size: 26px;
+  color: var(--col3);
+}
+
+.title-name span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  top: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.title-name h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Aside LEFT */
+#menu-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+#menu-container a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid var(--col1);
+  min-width: 70%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 16px;
+  transition: .3s;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+
+#menu-container a:hover {
+  color: var(--col3);
+}
+
+#menu-container a.active {
+  color: var(--col3);
+}
+
+/* Menu */
+
+#menu-container a>svg {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* Contato */
+#contact-linked a {
+  color: var(--col3);
+  text-decoration: none;
+}
+
+/* Divs Main */
+#aside-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+}
+
+#aside-right .show {
+  display: flex !important;
+  top: 25%;
+}
+
+.aside_right-frame {
+  display: flex;
+  position: absolute;
+  top: -200vh;
+  transition: .5s;
+  width: -webkit-fill-available;
+}
+
+.aside_right-frame>div:first-child {
+  width: -webkit-fill-available;
+}
+
+.aside_right-frame h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.aside_right-frame>div:first-child>p {
+  font-family: 'Poppins', sans-serif;
+  margin: 18px auto;
+  text-indent: 20px;
+  font-weight: 300;
+  width: 70%;
+  margin-left: 0;
+}
+
+#dv_home>div:nth-child(1) {
+  padding-top: 100px;
+  max-width: 50%;
+}
+
+#dv_home>div:nth-child(1)>p {
+  width: auto;
+}
+
+#dv_home>div:nth-child(1)>button {
+  background-color: var(--col3);
+  color: #fff;
+  border-radius: 40px;
+  padding: 10px 20px;
+  margin-top: 40px;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#dv_home>div:nth-child(1)>button:hover {
+  opacity: .75;
+}
+
+#dv_home-img_profile {
+  width: 300px;
+  padding: 5px;
+  transition: .3s;
+  border: 5px solid var(--col3);
+  border-radius: 50%;
+}
+
+#dv_home>div:nth-child(2) {
+  position: relative;
+  margin-left: 40px;
+}
+
+/* Contact */
