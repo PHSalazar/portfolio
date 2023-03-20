@@ -12,6 +12,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -52,7 +53,6 @@ main {
 
 /* Title Username */
 .title-name h2::first-letter {
-  font-family: 'Great Vibes', cursives;
   font-size: 26px;
   color: var(--col3);
 }
@@ -120,23 +120,16 @@ main {
 
 /* Divs Main */
 #aside-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-left: 40px;
-}
-
-#aside-right .show {
-  display: flex !important;
-  top: 25%;
+  height: 100vh;
+  overflow: auto;
 }
 
 .aside_right-frame {
   display: flex;
-  position: absolute;
-  top: -200vh;
-  transition: .5s;
-  width: -webkit-fill-available;
+  align-items: center;
+  height: 100vh;
+  width: -webkiit-fill-available;
 }
 
 .aside_right-frame>div:first-child {
