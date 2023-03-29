@@ -29,7 +29,7 @@ const getRepo = async () => {
 
   await fetch(`https://api.github.com/users/${owner}/repos`, {
     headers: {
-      Authorization: `Bearer ${token}`,
+      auth: 'access_token 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',
     },
   })
     .then((response) => response.json())
