@@ -51,7 +51,7 @@ const setGit = () => {
   list.map(
     ({ name, full_name, html_url, description, created_at, homepage }) => {
       projectsContainer.innerHTML += `<a class='card' href =' ${
-        homepage !== null ? homepage : '#'
+        homepage !== null ? homepage : html_url
       }' target='_blank';>
     <h3>${name}</h3><span class='date'>${created_at.split('T')[0]}</span>
     <p>${description}</p>
