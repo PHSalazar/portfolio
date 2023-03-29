@@ -12,7 +12,13 @@
 <body>
 
   <main>
+    <button id="menu">
+      Menu
+    </button>
     <div id="aside-left">
+
+      <button id="hide-menu">x</button>
+
       <div id="dv_profile">
         <img src="./assets/profile.png" alt="" id="img-profile">
         <div class="title-name">
@@ -75,7 +81,7 @@
           <p>Me chamo <span style="color: var(--col3);">Pedro Salazar</span>, tenho 29 anos e atualmente moro no RJ - Brasil. No momento, curso Ciência da Computação na Estácio e para colocar em prática meu desenvolvimento, criei esse espaço/portifólio.</p>
           <p>Fique a vontate para <span onclick="document.querySelector('#menu-container > a:nth-child(4)').click()" style="color: var(--col3);cursor: pointer;text-decoration: underline;">me contatar</span> :)</p>
 
-          <div style=" display: flex; justify-content: space-evenly;width: 70%; margin-left: 0;">
+          <div style="display: flex;justify-content: space-evenly;width: auto;margin-left: 0;font-family: 'Noto sans', sans-serif;align-items: center;text-align: center;gap: 10px;">
             <div>
               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAABPRJREFUeF7tmmvIZVMYx3//cS/JNQkZcplGGXxg8MG4RzEuuYfJNVHTJHdfXZoPIpJyyW1MhhHGpUEuNZHGuCZGCCG5FGLQ4NF/WqeWbZ85+5yz39Oe9+yn3g/v2WuvtZ7fc1nPWmuLMReNuf60AFoPGHMCbQiMuQO0SbANgTYExpzAyEMgIqYABwInA2cCGwBPAo8Cz0n6a5Q2GRmAiNgzKX0OMLWLkt8AjxmGpGWjADGhACJip2TlMwAD6EgArwEPpx/83F6Rz+eD9HyBpC8mCkbtACJic+A44CzgsIJSHwGPAA9J+iRXKiJ2BE4E5gB7FxReATxoIJK+rxNGLQAiYiPgyKT0bGDDbJI/AoutQFW3TuFigGcD22V9/Q28nGAslvTbsDAGBlCSzLbKJvM78HSa6MCJLRvDME4DNsvG+Bl4atjk2TeALJnZOjt3sc7jkn4d1jqFENkYOKKLlw2cPCsBiIgdgJMAZ/B9usTnQknf9aN0RNyUwuVaSfaaShIRWwDHdskzHwKLUsh92qvDtQJIij8AzCpJZgtSUvqs1yBlz5MSPwCuC5YDx0uyJfuSiNgF8CrimmJaYaV5xXlE0lfdOu0F4FzgnsLLS4GrJb3d10xLGkfEJcCtwHrA18BsSc74fUtEeOWwRx1VePk8SfcOCmAT4HLg9AJd9+dlzNWbi5aBYUSEVw8vjV4+/wDOl2Tv6ilJaVeU/tut8IKX3IXAfEnut1Qq5QC/GRF7pYE82B6F3oaCERGe/JLUr4uk+cA1kv4pzrqH0iszo7zXk2Ahrqu0X9NmImBExJZp8oemidi75khaFRGuBS7tYum+lc4VrewB3egkGJ7cBSVt+vKMiPDG6DbgotTXm6mqvAU4pdD/XcDtkipZeugQWJt7RMTBgDOu5fpkqd37DZOImA58mzL6zcD6wN3AC8Bc4CXgutTvLEmvVnbbYXNAHwCmSIqImJHljDIYXqvt5pY8ka2UNC0ivPp4FXJ94WXOoWeP7eSFZgPIgfWAUWT7hKQTIuLOFArrPoAKMD5O3rCoE9OTFkABxprQkGQA/5GxANAjr0zOEKiatVsPmKxJcBw8YGodh5hdQsCHrJ83sRCaCbyeWdcnus/6nB9YJml1Vct32uUAgAuB54EDsn5mSnqj336L7YfeC6QKzSWr9/WnAvnZoB//AryYYPh80Pv+nlIA4PLX+wrP14es3j7PreMSpRYAmdV8sLEfcAxwNLBvyY7z3Q6MdDfg121Zt/efYXpvcUNeCUbE/qmv5ZJ8OlyL1AqgpJjZNlPMBx8+9Mjlp/RP/rtrfW+K5hVL4Vo0LnQyoQDysSLClrWlO97hzVIu7yTP8Hn/irIkuE4DKPGO7bPzu6XF3DDpAfSyZgugpBLsBW2Q5yPLAf1OrvWA1gP+fyLUrxdVad+4EEjnfpcBVwDbAKsA30bNq2OPUYTSRAAXA3eUWO99X8zWWQV6jCYC8BH44cAzwP3A1hmQ6ZJ8+1ubNBGAd3jeT1wpaX5E+GuTP5PGB0nyt0W1SRMB+PLjEOA+3/yk3aVzgGXGsDdB60IOuAq4scTEXwK7DnK2sDZ3aaIH2OV9P+hPcPxZjMUJ0Belb9Xm+6mjxgHoKJguSjcFVtf9vVEOsbEA6rZ0t/5aAKMi3dRxWg9oqmVGNa/WA0ZFuqnjtB7QVMuMal5j7wH/Ar4rJF+ypquUAAAAAElFTkSuQmCC" alt="">
               <p>Ciência da Computação</p>
@@ -83,15 +89,17 @@
 
             <div>
               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAlZJREFUeF7tmjuvDVEUx39/cT2T2xDc0Ito6SgU4tErbisqH0Ep8Rko+ACiUihoJBKVXiEqr0hQiOsVj7+s5FRyz9kzc+4+Zyazpplir732mv9e7zVi5I9G/v0kAKkBI0cgTWDkCpBOME0gTaCAgO0dwFEg3qXnK/BC0t8SYV/WZ5qA7ZPAfWCthcDvgBvATUlusW8ppCUAngEngJfA5wYSHgYOTehuAVf7DkIJgB/ATmCPpO8NAMD2OnAH2A3cBa5Let5k7zJoSgD8ArYDK5J+NxXQ9gXgHrC36Z4KdCH7E+CypFfT+FcBIA6zHY7zGnC2pQ/ZaiweSTq3cAC2+iva8rO9D/gI/JS0a3QATLQwwnFo+bZpzriaCbS9sRr0thOAeTUgkpoV4EDf4/lmGmT7fQAg6WBXHxCJTTB4U0NFa/O0fSQCkqS3nQCoLWAf+Gc53OQWbIcNLTOrayLm/zTfJIUPmPmUwuCxSUp7vMSop+tRg1yaVYuUAIhc+jTwqWE12CccVoH9wFNJpzo5QdtRAUYauSrpS5++riSL7ahGo0HzJ5o5mQlOac6UTKBTOVy6nUWtZyqctUAWQ1kNzlsNphPs0hRdlJcvnZNRIKNARoGMAhkFsi2ec4EcjORkKEdjORvM4Wj2BLMnuPkfa6Wm6MZkIrTWZMpSKk8XuW47ZgIf5v1D5AFwcZGCVzjroaTzXQcjMV6+DZxp+KdoBfk7s4xu1mPgiqTXnQDofPSANuZ4fECXVUXU1IAqsA6IaWrAgC6riqipAVVgHRDT1IABXVYVUf8BBRJ/UGEiB/QAAAAASUVORK5CYII=" alt="">
-              <p>100<br>projetos</p>
+              <p><span id="numProjects">100</span><br>projetos</p>
             </div>
 
             <div>
               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAABPRJREFUeF7tmmvIZVMYx3//cS/JNQkZcplGGXxg8MG4RzEuuYfJNVHTJHdfXZoPIpJyyW1MhhHGpUEuNZHGuCZGCCG5FGLQ4NF/WqeWbZ85+5yz39Oe9+yn3g/v2WuvtZ7fc1nPWmuLMReNuf60AFoPGHMCbQiMuQO0SbANgTYExpzAyEMgIqYABwInA2cCGwBPAo8Cz0n6a5Q2GRmAiNgzKX0OMLWLkt8AjxmGpGWjADGhACJip2TlMwAD6EgArwEPpx/83F6Rz+eD9HyBpC8mCkbtACJic+A44CzgsIJSHwGPAA9J+iRXKiJ2BE4E5gB7FxReATxoIJK+rxNGLQAiYiPgyKT0bGDDbJI/AoutQFW3TuFigGcD22V9/Q28nGAslvTbsDAGBlCSzLbKJvM78HSa6MCJLRvDME4DNsvG+Bl4atjk2TeALJnZOjt3sc7jkn4d1jqFENkYOKKLlw2cPCsBiIgdgJMAZ/B9usTnQknf9aN0RNyUwuVaSfaaShIRWwDHdskzHwKLUsh92qvDtQJIij8AzCpJZgtSUvqs1yBlz5MSPwCuC5YDx0uyJfuSiNgF8CrimmJaYaV5xXlE0lfdOu0F4FzgnsLLS4GrJb3d10xLGkfEJcCtwHrA18BsSc74fUtEeOWwRx1VePk8SfcOCmAT4HLg9AJd9+dlzNWbi5aBYUSEVw8vjV4+/wDOl2Tv6ilJaVeU/tut8IKX3IXAfEnut1Qq5QC/GRF7pYE82B6F3oaCERGe/JLUr4uk+cA1kv4pzrqH0iszo7zXk2Ahrqu0X9NmImBExJZp8oemidi75khaFRGuBS7tYum+lc4VrewB3egkGJ7cBSVt+vKMiPDG6DbgotTXm6mqvAU4pdD/XcDtkipZeugQWJt7RMTBgDOu5fpkqd37DZOImA58mzL6zcD6wN3AC8Bc4CXgutTvLEmvVnbbYXNAHwCmSIqImJHljDIYXqvt5pY8ka2UNC0ivPp4FXJ94WXOoWeP7eSFZgPIgfWAUWT7hKQTIuLOFArrPoAKMD5O3rCoE9OTFkABxprQkGQA/5GxANAjr0zOEKiatVsPmKxJcBw8YGodh5hdQsCHrJ83sRCaCbyeWdcnus/6nB9YJml1Vct32uUAgAuB54EDsn5mSnqj336L7YfeC6QKzSWr9/WnAvnZoB//AryYYPh80Pv+nlIA4PLX+wrP14es3j7PreMSpRYAmdV8sLEfcAxwNLBvyY7z3Q6MdDfg121Zt/efYXpvcUNeCUbE/qmv5ZJ8OlyL1AqgpJjZNlPMBx8+9Mjlp/RP/rtrfW+K5hVL4Vo0LnQyoQDysSLClrWlO97hzVIu7yTP8Hn/irIkuE4DKPGO7bPzu6XF3DDpAfSyZgugpBLsBW2Q5yPLAf1OrvWA1gP+fyLUrxdVad+4EEjnfpcBVwDbAKsA30bNq2OPUYTSRAAXA3eUWO99X8zWWQV6jCYC8BH44cAzwP3A1hmQ6ZJ8+1ubNBGAd3jeT1wpaX5E+GuTP5PGB0nyt0W1SRMB+PLjEOA+3/yk3aVzgGXGsDdB60IOuAq4scTEXwK7DnK2sDZ3aaIH2OV9P+hPcPxZjMUJ0Belb9Xm+6mjxgHoKJguSjcFVtf9vVEOsbEA6rZ0t/5aAKMi3dRxWg9oqmVGNa/WA0ZFuqnjtB7QVMuMal5j7wH/Ar4rJF+ypquUAAAAAElFTkSuQmCC" alt="">
-              <p>100<br>projetos</p>
+              <p><span>100</span><br>projetos</p>
             </div>
           </div>
         </div>
+
+        <button id="goToPort" class="link" onclick="document.querySelector('#menu-container > a:nth-child(3)').click()">Ver Portfolio</button>
       </div>
 
       <div id="dv_port" class="aside_right-frame">
@@ -99,6 +107,10 @@
           <h2>Portfolio</h2>
           <p>Alguns dos meus projetos que eu fiz para aprimorar meus conhecimentos:</p>
         </div>
+
+        <div id="projects-container"></div>
+
+        <button id="goToContact" class="link" onclick="document.querySelector('#menu-container > a:nth-child(4)').click()">Fale Comigo</button>
       </div>
 
       <div id="dv_contact" class="aside_right-frame">
@@ -113,6 +125,8 @@
 
     </div>
   </main>
+
+  <script src="main.js"></script>
 
 </body>
 
