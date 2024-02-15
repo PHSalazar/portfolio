@@ -8,7 +8,7 @@
 
 header {
     height: 70vh;
-    background: url('/assets/wallpaperbetter.jpg');
+    background: url('./assets/wallpaperbetter.jpg');
     display: grid;
     justify-content: center;
     align-items: start;
@@ -34,12 +34,12 @@ header {
 }
 
 #menu-top > #contact-header > .sub-contact:first-of-type {
-    background: url('/assets/linkedin-icon.svg') no-repeat;
+    background: url('./assets/linkedin-icon.svg') no-repeat;
     background-size: 40px;
     background-position-y: center;
 }
 #menu-top > #contact-header > .sub-contact:last-of-type {
-    background: url('/assets/github-icon.svg') no-repeat;
+    background: url('./assets/github-icon.svg') no-repeat;
     background-size: 40px;
     background-position-y: center;
 }
