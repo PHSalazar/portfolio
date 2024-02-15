@@ -8,7 +8,7 @@
 
 header {
     height: 70vh;
-    background: url('./assets/wallpaperbetter.jpg');
+    background: url('../assets/wallpaperbetter.jpg');
     display: grid;
     justify-content: center;
     align-items: start;
